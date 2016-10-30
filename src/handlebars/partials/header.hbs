@@ -1,0 +1,46 @@
+<div class="row line1">
+    <table>
+        <tbody>
+            <tr>
+                <td class="personal_resume">
+                    <span class="text_resume">Person Resume</span>
+                </td>
+                {{#if jobs}}
+                <td class="jobs_wanted">
+                    求职意向：{{#each jobs}} <span class="job">{{this}}</span>{{/each}}
+                </td>
+                {{/if}}
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row">
+    <table>
+        <tbody>
+        <tr>
+            <td class="personal_resume">{{xingming}}：{{name}}</td>
+            <td class="line2">{{youxiang}}：{{ mail }}  <span class="tel">{{dianhua}}：{{phone}}</span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row">
+    <table>
+        <tbody>
+        <tr>
+            <td class="personal_resume blog">{{boke}}：</td>
+            <td class="line3">{{blog}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row">
+    <table>
+        <tbody>
+        <tr>
+            <td class="personal_resume  blog">{{opensource}}：</td>
+            <td class="line4">{{github}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
